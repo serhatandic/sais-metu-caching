@@ -4,4 +4,4 @@
 -> Go to chrome://extensions/ url in your browser \
 -> Select load packet \
 -> Select the folder that you pulled the repo \
--> That is all ! \
+-> That is all !
