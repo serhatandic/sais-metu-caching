@@ -49,25 +49,9 @@ const script = () => {
 		submitButtonElm.addEventListener('click', async function (e) {
 			backButtonQuery =
 				'#single_content > form > table:nth-child(4) > tbody > tr > td:nth-child(4) > input[type=submit]';
-			backButtonElement = waitForElm(backButtonQuery).then(
-				(backButtonElm) => {
-					backButtonElm.addEventListener('click', async function () {
-						waitForElm(deptQuery).then((elm) => {
-							if (localStorage.getItem('selectedDept')) {
-								elm.value =
-									localStorage.getItem('selectedDept');
-							}
-						});
-						waitForElm(semesterQuery).then((elm) => {
-							if (localStorage.getItem('selectedSemester')) {
-								elm.value =
-									localStorage.getItem('selectedSemester');
-							}
-						});
-					});
-					script();
-				}
-			);
+			backButtonElement = waitForElm(backButtonQuery).then(() => {
+				script();
+			});
 		});
 	});
 };
