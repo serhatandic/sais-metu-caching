@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "sais-metu-caching",
+	"description": "Caches select field values to preserve them during navigation.",
+	"version": "1.0",
+	"permissions": ["storage"],
+	"content_scripts": [
+		{
+			"matches": ["https://student.metu.edu.tr/portal/"],
+			"js": ["content.js"]
+		}
+	],
+	"run_at": "document_end"
+}
