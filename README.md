@@ -6,6 +6,6 @@
 
 -> Pull the repo to a new folder \
 -> Go to chrome://extensions/ url in your browser \
--> Select load packet \
+-> Select load packet (paketlenmemiş öğe yükle) \
 -> Select the folder that you pulled the repo \
 -> That is all !
